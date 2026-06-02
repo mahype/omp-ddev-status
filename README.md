@@ -2,7 +2,13 @@
 
 Display [DDEV](https://ddev.com/) project status directly in your [Oh My Posh](https://ohmyposh.dev/) prompt — including server status and project URL.
 
-![Oh My Posh DDEV Segment](screenshots/example.png)
+**Running** — teal background with project URL:
+
+![DDEV Running](screenshots/running.png)
+
+**Stopped** — gray background with status:
+
+![DDEV Stopped](screenshots/stopped.png)
 
 ## Features
 
