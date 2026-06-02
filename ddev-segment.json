@@ -1,0 +1,15 @@
+{
+  "_comment": "DDEV status segment for Oh My Posh — copy this into your theme's segments array.",
+  "_docs": "https://github.com/mahype/omp-ddev-status",
+
+  "type": "text",
+  "style": "powerline",
+  "powerline_symbol": "\ue0b0",
+  "foreground": "#f2f3f8",
+  "background": "#666666",
+  "background_templates": [
+    "{{ if eq .Env.POSH_DDEV_STATUS \"running\" }}#0d7377{{ end }}",
+    "{{ if eq .Env.POSH_DDEV_STATUS \"paused\" }}#c18401{{ end }}"
+  ],
+  "template": "{{ if .Env.POSH_DDEV_NAME }} \uf233 {{ .Env.POSH_DDEV_NAME }}{{ if eq .Env.POSH_DDEV_STATUS \"running\" }} <transparent>\ue0b1</> {{ .Env.POSH_DDEV_URL }}{{ else }} <transparent>\ue0b1</> {{ .Env.POSH_DDEV_STATUS }}{{ end }} {{ end }}"
+}
